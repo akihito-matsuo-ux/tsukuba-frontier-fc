@@ -1257,6 +1257,29 @@ button.btn{font-family:inherit}
 .stub:has(.stub-hit:hover) .stub-label,.stub:has(.stub-hit:focus-visible) .stub-label{background:#F2C84B}
 .stub:has(.stub-hit:hover) .stub-more,.stub:has(.stub-hit:focus-visible) .stub-more{background:var(--link);color:#fff}
 @media (prefers-reduced-motion:reduce){.stub{transition:none}.stub:has(.stub-hit:hover){transform:none}}
+.gd-home{background:linear-gradient(180deg,#EEF4FB 0%,var(--paper) 100%)}
+.gdh-head{text-align:center;margin-bottom:32px}
+.gdh-title{font-family:var(--f-num);font-weight:700;font-size:clamp(40px,6vw,64px);letter-spacing:.08em;color:var(--navy);line-height:1}
+.gdh-title::after{content:"";display:block;width:120px;height:6px;border-radius:3px;background:var(--blue);margin:14px auto 0}
+.gdh-sub{margin-top:14px;font-weight:700;font-size:17px;color:var(--ink-soft)}
+.gdh-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.gdh-card{position:relative;display:flex;flex-direction:column;min-height:220px;border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 10px 28px rgba(18,33,63,.10);color:var(--navy);transition:transform .25s ease,box-shadow .25s ease}
+.gdh-card:hover,.gdh-card:focus-visible{transform:translateY(-4px);box-shadow:0 0 0 3px var(--gold),0 20px 44px rgba(18,33,63,.2)}
+.gdh-band{background:var(--navy);color:#fff;font-weight:900;font-size:15px;letter-spacing:.04em;padding:12px 22px}
+.gdh-body{display:flex;flex-direction:column;gap:6px;padding:20px 22px 22px;max-width:64%}
+.gdh-big{font-weight:900;font-size:clamp(22px,2.6vw,30px);line-height:1.3}
+.gdh-mini{font-size:13px;font-weight:700;color:var(--ink-soft);line-height:1.6}
+.gdh-en{margin-top:auto;font-family:var(--f-num);font-weight:700;letter-spacing:.14em;font-size:15px;color:var(--blue)}
+.gdh-card img{position:absolute;right:10px;bottom:6px;width:38%;max-width:170px;height:auto;mix-blend-mode:multiply}
+.gdh-ic{position:absolute;right:28px;bottom:26px;width:96px;height:96px;fill:#E1ECF8;stroke:var(--blue);stroke-width:3;stroke-linecap:round}
+.gdh-faq .gdh-band{background:#E8A21A}
+.gdh-access{justify-content:center;align-items:center;text-align:center;gap:12px;padding:28px 20px;color:#fff;border:0;background:linear-gradient(rgba(18,33,63,.55),rgba(18,33,63,.72)),url(tm_banner.jpg) center 70%/cover}
+.gdh-access .gdh-big{font-size:clamp(26px,3.2vw,38px);text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.gdh-access em{font-style:normal;color:var(--gold)}
+.gdh-access .gdh-en{margin-top:0;color:#BFD9F2}
+.gdh-pill{background:var(--gold);color:var(--navy);font-weight:900;font-size:14px;padding:6px 18px;border-radius:999px}
+@media (max-width:760px){.gdh-grid{grid-template-columns:1fr}.gdh-card{min-height:180px}}
+@media (prefers-reduced-motion:reduce){.gdh-card{transition:none}.gdh-card:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -1509,19 +1532,33 @@ button.btn{font-family:inherit}
   </section>
 
 
-  <section class="section ac-teaser" id="access-teaser">
+  <section class="section gd-home" id="guide-teaser" aria-labelledby="gdh-title">
     <div class="wrap">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title">アクセス</h2>
-          <p class="section-sub">駅を出たら、すぐスタジアム。試合日は市内各地からAIシャトルバスも。</p>
-        </div>
-        <a href="#gd-access" class="text-link">アクセスを詳しく見る</a>
+      <div class="gdh-head">
+        <h2 id="gdh-title" class="gdh-title">GUIDE</h2>
+        <p class="gdh-sub">観戦の準備をしよう！</p>
       </div>
-      <div class="ht-cards">
-        <a href="#gd-access" class="ht-card"><span class="ht-tag">電車</span><b>研究学園駅から徒歩30秒</b><span>つくばエクスプレスで、秋葉原駅から乗り換えなし。</span></a>
-        <a href="#gd-access" class="ht-card"><span class="ht-tag">AIシャトルバス（試合日）</span><b>市内5か所から運行</b><span>イーアスつくば／筑波大学／筑波大学附属病院／つくばテクノパーク豊里／筑波山地域ジオパーク</span></a>
-        <a href="#gd-access" class="ht-card"><span class="ht-tag">車・路線バス</span><b>駐車場は台数に限りがあります</b><span>試合日は周辺道路が混雑します。できるだけ公共交通機関で。</span></a>
+      <div class="gdh-grid">
+        <a href="#gd-access" class="gdh-card gdh-access">
+          <span class="gdh-pill">試合日はAIシャトルバスも運行</span>
+          <span class="gdh-big">研究学園駅から<br><em>徒歩30秒</em></span>
+          <span class="gdh-en">ACCESS</span>
+        </a>
+        <a href="#gd-first" class="gdh-card gdh-first">
+          <span class="gdh-band">つくばフロンティアFC 観戦ガイド</span>
+          <span class="gdh-body"><span class="gdh-big">はじめての<br><span class="nb">つくば市営</span><span class="nb">スタジアム</span></span><span class="gdh-en">BEGINNERS GUIDE</span></span>
+          <img src="tm_acrylic.jpg" alt="" width="320" height="320" loading="lazy">
+        </a>
+        <a href="#gd-seats" class="gdh-card gdh-seats">
+          <span class="gdh-band">席えらびに迷ったら</span>
+          <span class="gdh-body"><span class="gdh-big">座席ガイド</span><span class="gdh-mini">一般席・ピクニックシート・ピッチサイド スタンディングバーまで</span><span class="gdh-en">SEAT GUIDE</span></span>
+          <svg class="gdh-ic" viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="10" width="40" height="26" rx="6"/><rect x="8" y="34" width="48" height="10" rx="4"/><path d="M14 44v12M50 44v12"/></svg>
+        </a>
+        <a href="#gd-faq" class="gdh-card gdh-faq">
+          <span class="gdh-band">スタジアムのこと、なんでも</span>
+          <span class="gdh-body"><span class="gdh-big">よくある質問</span><span class="gdh-mini">持ち物・ルール・駐車場・試合の日の1日</span><span class="gdh-en">FAQ</span></span>
+          <img src="tm_keyholder.jpg" alt="" width="320" height="320" loading="lazy">
+        </a>
       </div>
     </div>
   </section>
