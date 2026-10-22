@@ -16,13 +16,13 @@
   --blue:#2F6FAD;
   --gold:#E8B93C;
   --gold-soft:#F6E3AE;
-  --paper:#FFFFFF;
+  --paper:#F7F8FA;
   --mist:#EEF3F8;
   --line:#D9E3EE;
   --ink:#12213F;
   --ink-soft:#4B5B70;
   --link:#245C93;
-  --header-bg:rgba(255,255,255,.94);
+  --header-bg:rgba(247,248,250,.94);
 
   --f-body:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
   --f-display:"Shippori Mincho","Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -33,18 +33,7 @@
   padding-top:env(safe-area-inset-top,0px);
   padding-bottom:env(safe-area-inset-bottom,0px);
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --paper:#0C172D; --mist:#122242; --line:#24385A;
-    --ink:#E9EFF7; --ink-soft:#A9B8CB; --link:#8CC0F0; --blue:#6FA7DE;
-    --header-bg:rgba(12,23,45,.94);
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#0C172D; --mist:#122242; --line:#24385A;
-  --ink:#E9EFF7; --ink-soft:#A9B8CB; --link:#8CC0F0; --blue:#6FA7DE;
-  --header-bg:rgba(12,23,45,.94);
-}
+
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + env(safe-area-inset-top,0px))}
@@ -1241,28 +1230,25 @@ button.btn{font-family:inherit}
 <div class="soon-toast" id="soon-toast" role="status" aria-live="polite"></div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tsukuba-emblem" viewBox="0 0 1000 1000">
-<path fill="#5FB0D3" d="M190,345 L335,215 L405,278 L500,95 L598,272 L668,205 L810,345 Z"/>
-<path fill="#FFFFFF" d="M150,385 L850,385 L822,450 L178,450 Z"/>
-<path fill="#FFFFFF" d="M352,450 L462,450 L462,905 L352,835 Z"/>
-<path fill="#FFFFFF" d="M482,450 L572,450 L572,850 L482,905 Z"/>
-<path fill="#FFFFFF" d="M572,565 L790,565 L762,632 L572,632 Z"/>
+<path fill="#5FB0D3" fill-rule="evenodd" d="M192,314 L312,180 L396,232 L492,90 L612,232 L690,180 L814,314 Z M458,314 L492,196 L526,314 Z"/>
+<path fill="#FFFFFF" d="M150,370 L466,370 L466,860 L356,795 L356,440 L180,440 Z"/>
+<path fill="#FFFFFF" d="M490,370 L850,370 L822,440 L552,440 L552,805 L490,860 Z"/>
+<path fill="#FFFFFF" d="M576,520 L790,520 L763,588 L576,588 Z"/>
 </symbol><symbol id="tsukuba-emblem-tile" viewBox="0 0 1000 1000">
 <rect width="1000" height="1000" rx="200" fill="#12213F"/>
 <g transform="translate(110,110) scale(.78)">
-<path fill="#5FB0D3" d="M190,345 L335,215 L405,278 L500,95 L598,272 L668,205 L810,345 Z"/>
-<path fill="#FFFFFF" d="M150,385 L850,385 L822,450 L178,450 Z"/>
-<path fill="#FFFFFF" d="M352,450 L462,450 L462,905 L352,835 Z"/>
-<path fill="#FFFFFF" d="M482,450 L572,450 L572,850 L482,905 Z"/>
-<path fill="#FFFFFF" d="M572,565 L790,565 L762,632 L572,632 Z"/>
+<path fill="#5FB0D3" fill-rule="evenodd" d="M192,314 L312,180 L396,232 L492,90 L612,232 L690,180 L814,314 Z M458,314 L492,196 L526,314 Z"/>
+<path fill="#FFFFFF" d="M150,370 L466,370 L466,860 L356,795 L356,440 L180,440 Z"/>
+<path fill="#FFFFFF" d="M490,370 L850,370 L822,440 L552,440 L552,805 L490,860 Z"/>
+<path fill="#FFFFFF" d="M576,520 L790,520 L763,588 L576,588 Z"/>
 </g>
 </symbol><symbol id="tsukuba-emblem-lockup" viewBox="0 0 1000 1000">
 <rect width="1000" height="1000" rx="90" fill="#12213F"/>
 <g transform="translate(220,90) scale(.56)">
-<path fill="#5FB0D3" d="M190,345 L335,215 L405,278 L500,95 L598,272 L668,205 L810,345 Z"/>
-<path fill="#FFFFFF" d="M150,385 L850,385 L822,450 L178,450 Z"/>
-<path fill="#FFFFFF" d="M352,450 L462,450 L462,905 L352,835 Z"/>
-<path fill="#FFFFFF" d="M482,450 L572,450 L572,850 L482,905 Z"/>
-<path fill="#FFFFFF" d="M572,565 L790,565 L762,632 L572,632 Z"/>
+<path fill="#5FB0D3" fill-rule="evenodd" d="M192,314 L312,180 L396,232 L492,90 L612,232 L690,180 L814,314 Z M458,314 L492,196 L526,314 Z"/>
+<path fill="#FFFFFF" d="M150,370 L466,370 L466,860 L356,795 L356,440 L180,440 Z"/>
+<path fill="#FFFFFF" d="M490,370 L850,370 L822,440 L552,440 L552,805 L490,860 Z"/>
+<path fill="#FFFFFF" d="M576,520 L790,520 L763,588 L576,588 Z"/>
 </g>
 <text x="500" y="755" text-anchor="middle" font-family="'Barlow Condensed','Zen Kaku Gothic New',Arial,sans-serif" font-weight="700" font-size="78" letter-spacing="4" textLength="780" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">TSUKUBA FRONTIER FC</text>
 <text x="500" y="850" text-anchor="middle" font-family="'Barlow Condensed','Zen Kaku Gothic New',Arial,sans-serif" font-weight="600" font-size="56" letter-spacing="6" textLength="300" lengthAdjust="spacingAndGlyphs" fill="#5FB0D3">EST. 1985</text>
