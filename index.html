@@ -1248,8 +1248,15 @@ button.btn{font-family:inherit}
 .stub-hit{position:absolute;inset:0;z-index:1;border-radius:inherit}
 .stub-hit:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .stub-action{position:relative;z-index:2}
-.stub:hover{box-shadow:0 18px 44px rgba(18,33,63,.22)}
-.stub-more{color:var(--link);font-weight:700;white-space:nowrap}
+.stub{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.stub-main,.stub-label{transition:background-color .25s ease}
+.stub-hit{cursor:pointer}
+.stub-more{display:inline-flex;align-items:center;gap:4px;margin-left:6px;padding:2px 10px;border:1.5px solid var(--link);border-radius:999px;color:var(--link);font-weight:700;white-space:nowrap;transition:background-color .25s ease,color .25s ease}
+.stub:has(.stub-hit:hover),.stub:has(.stub-hit:focus-visible),.stub:has(.stub-hit:active){transform:translateY(-4px);border-color:var(--gold);box-shadow:0 0 0 3px var(--gold),0 24px 56px rgba(18,33,63,.28)}
+.stub:has(.stub-hit:hover) .stub-main,.stub:has(.stub-hit:focus-visible) .stub-main,.stub:has(.stub-hit:active) .stub-main{background:#FFF6DC}
+.stub:has(.stub-hit:hover) .stub-label,.stub:has(.stub-hit:focus-visible) .stub-label{background:#F2C84B}
+.stub:has(.stub-hit:hover) .stub-more,.stub:has(.stub-hit:focus-visible) .stub-more{background:var(--link);color:#fff}
+@media (prefers-reduced-motion:reduce){.stub{transition:none}.stub:has(.stub-hit:hover){transform:none}}
 </style>
 </head>
 <body>
