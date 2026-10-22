@@ -1284,6 +1284,8 @@ button.btn{font-family:inherit}
 .gdh-faq img{width:36%;max-width:160px}
 .st-ekinaka{margin-top:12px}
 .st-badge{display:inline-block;background:var(--gold);color:var(--navy);font-weight:900;font-size:13px;padding:3px 12px;border-radius:999px;margin-right:8px}
+.gdh-stadium{position:absolute;right:26px;bottom:34px;width:150px;height:80px;color:var(--blue)}
+@media (max-width:760px){.gdh-stadium{width:110px;height:60px;right:18px;bottom:26px}}
 </style>
 </head>
 <body>
@@ -1551,7 +1553,7 @@ button.btn{font-family:inherit}
         <a href="#gd-first" class="gdh-card gdh-first">
           <span class="gdh-band">つくばフロンティアFC 観戦ガイド</span>
           <span class="gdh-body"><span class="gdh-big">はじめての<br><span class="nb">つくば市営</span><span class="nb">スタジアム</span></span><span class="gdh-en">BEGINNERS GUIDE</span></span>
-          <img class="gdh-photo" src="gd_tsukumaru.jpg" alt="" width="400" height="400" loading="lazy">
+          <svg class="gdh-stadium" viewBox="0 0 120 64" aria-hidden="true"><path d="M4 56h112" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M10 50 L30 18 H90 L110 50 Z" fill="#E1ECF8" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M20 40h80M26 30h68" stroke="currentColor" stroke-width="2" opacity=".6"/></svg>
         </a>
         <a href="#gd-seats" class="gdh-card gdh-seats">
           <span class="gdh-band">席えらびに迷ったら</span>
@@ -1733,6 +1735,23 @@ button.btn{font-family:inherit}
             <button type="button" class="btn btn-navy" data-soon>枠について問い合わせる</button>
           </div>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="pa-sec" id="pa-marathon">
+    <div class="wrap eco-grid">
+      <figure class="eco-poster"><a href="#citizen-day"><img src="citizen_day.jpg" alt="つくば市民DAYのポスター。ツクマルや選手、家族連れ、ロボットスーツを着けた人、車いすの子どもが一緒にたすきを持って走っている" width="1200" height="800" loading="lazy"></a></figure>
+      <div>
+        <span class="ht-tag">パートナー共創企画</span>
+        <h2 class="section-title">CYBERDYNE presents<br>5,000人フルマラソンリレー</h2>
+        <p class="ht-lead">つくば市民DAY〜みんなでつなぐ 42.195km〜。5,000人でたすきをつなぎ、マラソンリレーの世界記録に挑みます。ロボットスーツHALを装着したランナーも、車いすのランナーも、同じたすきをつなぐ。冠パートナーの技術そのものが、試合日の体験になります。</p>
+        <dl class="ht-info">
+          <div><dt>日程</dt><dd>2027年11月14日　つくば市民DAY<br><span>ゴールは試合前のスタジアム</span></dd></div>
+          <div><dt>参加</dt><dd>5,000人（1人あたり約8.4m）</dd></div>
+          <div><dt>冠パートナー</dt><dd>CYBERDYNE</dd></div>
+        </dl>
+        <p style="margin-top:24px"><a href="#citizen-day" class="btn btn-gold">イベントを詳しく見る</a></p>
       </div>
     </div>
   </section>
@@ -3271,7 +3290,7 @@ button.btn{font-family:inherit}
     else { stVideo.muted=true; stSound.querySelector('span').textContent='音声つきで最初から再生'; }
   });
   stPause.addEventListener('click',function(){ stLoad(); if(stVideo.paused){ stVideo.play(); stSetPaused(false);} else { stVideo.pause(); stSetPaused(true);} });
-  var views={'#philosophy':['philosophy','フィロソフィー'],'#news-coach':['news-coach','栗生佳典 監督就任のお知らせ'],'#news-hajimete':['news-hajimete','はじめて観戦DAY'],'#pa-event':['partnership','パートナーシップ'],'#pa-list':['partnership','パートナーシップ'],'#fanclub':['fanclub','ファンクラブ'],'#fc-ranks':['fanclub','ファンクラブ'],'#fc-compare':['fanclub','ファンクラブ'],'#fc-points':['fanclub','ファンクラブ'],'#fc-exchange':['fanclub','ファンクラブ'],'#fc-join':['fanclub','ファンクラブ'],'#guide':['guide','観戦ガイド'],'#gd-first':['guide','観戦ガイド'],'#gd-seats':['guide','観戦ガイド'],'#gd-access':['guide','観戦ガイド'],'#gd-day':['guide','観戦ガイド'],'#gd-enjoy':['guide','観戦ガイド'],'#gd-rules':['guide','観戦ガイド'],'#gd-faq':['guide','観戦ガイド'],'#news-list':['news-list','ニュース'],'#ph-philosophy':['philosophy','フィロソフィー'],'#ph-mission':['philosophy','フィロソフィー'],'#ph-vision':['philosophy','フィロソフィー'],'#ph-values':['philosophy','フィロソフィー'],'#citizen-day':['citizen-day','つくば市民DAY'],'#about':['about','クラブ概要'],'#academy':['academy','アカデミー'],'#mascot':['mascot','マスコット'],'#hometown':['hometown','ホームタウン活動'],'#ht-eco':['hometown','ホームタウン活動'],'#ht-univ':['hometown','ホームタウン活動'],'#schedule':['schedule','試合日程・結果'],'#partnership':['partnership','パートナーシップ'],'#pa-issue':['partnership','パートナーシップ'],'#pa-current':['partnership','パートナーシップ'],'#pa-b2b':['partnership','パートナーシップ'],'#pa-contact':['partnership','パートナーシップ'],'#stadium':['stadium','新スタジアム構想'],'#goods':['goods','グッズ'],'#goods-uniform':['goods','グッズ'],'#goods-muffler':['goods','グッズ'],'#goods-hoodie':['goods','グッズ'],'#goods-apparel':['goods','グッズ'],'#goods-tsukumaru':['goods','グッズ']};
+  var views={'#philosophy':['philosophy','フィロソフィー'],'#news-coach':['news-coach','栗生佳典 監督就任のお知らせ'],'#news-hajimete':['news-hajimete','はじめて観戦DAY'],'#pa-event':['partnership','パートナーシップ'],'#pa-marathon':['partnership','パートナーシップ'],'#pa-list':['partnership','パートナーシップ'],'#fanclub':['fanclub','ファンクラブ'],'#fc-ranks':['fanclub','ファンクラブ'],'#fc-compare':['fanclub','ファンクラブ'],'#fc-points':['fanclub','ファンクラブ'],'#fc-exchange':['fanclub','ファンクラブ'],'#fc-join':['fanclub','ファンクラブ'],'#guide':['guide','観戦ガイド'],'#gd-first':['guide','観戦ガイド'],'#gd-seats':['guide','観戦ガイド'],'#gd-access':['guide','観戦ガイド'],'#gd-day':['guide','観戦ガイド'],'#gd-enjoy':['guide','観戦ガイド'],'#gd-rules':['guide','観戦ガイド'],'#gd-faq':['guide','観戦ガイド'],'#news-list':['news-list','ニュース'],'#ph-philosophy':['philosophy','フィロソフィー'],'#ph-mission':['philosophy','フィロソフィー'],'#ph-vision':['philosophy','フィロソフィー'],'#ph-values':['philosophy','フィロソフィー'],'#citizen-day':['citizen-day','つくば市民DAY'],'#about':['about','クラブ概要'],'#academy':['academy','アカデミー'],'#mascot':['mascot','マスコット'],'#hometown':['hometown','ホームタウン活動'],'#ht-eco':['hometown','ホームタウン活動'],'#ht-univ':['hometown','ホームタウン活動'],'#schedule':['schedule','試合日程・結果'],'#partnership':['partnership','パートナーシップ'],'#pa-issue':['partnership','パートナーシップ'],'#pa-current':['partnership','パートナーシップ'],'#pa-b2b':['partnership','パートナーシップ'],'#pa-contact':['partnership','パートナーシップ'],'#stadium':['stadium','新スタジアム構想'],'#goods':['goods','グッズ'],'#goods-uniform':['goods','グッズ'],'#goods-muffler':['goods','グッズ'],'#goods-hoodie':['goods','グッズ'],'#goods-apparel':['goods','グッズ'],'#goods-tsukumaru':['goods','グッズ']};
   function route(){
     var h=location.hash, v=views[h], prev=body.dataset.view||'';
     ['philosophy','goods','stadium','partnership','news-coach','news-hajimete','schedule','hometown','fanclub','mascot','guide','about','academy','news-list','citizen-day'].forEach(function(n){ body.classList.toggle('view-'+n, !!v && v[0]===n); });
