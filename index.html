@@ -1291,6 +1291,15 @@ button.btn{font-family:inherit}
 .gdh-icon-seat{stroke-width:4;width:140px;aspect-ratio:172/86}
 .gdh-card:hover .gdh-icon,.gdh-card:focus-visible .gdh-icon{stroke:var(--blue)}
 @media (max-width:760px){.gdh-icon{width:110px;right:16px;bottom:20px}.gdh-icon-seat{width:100px}}
+.gnav-li{list-style:none}
+.gnav-link{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font-size:14.5px;font-weight:700;color:var(--ink-soft);border-radius:999px;white-space:nowrap}
+.gnav-link:hover,.gnav-link:focus-visible{color:var(--ink);background:var(--mist)}
+.gnav-link[aria-current="page"]{color:var(--ink);box-shadow:inset 0 -2px 0 var(--gold);border-radius:0}
+.gnav .gnav-btn{padding:0 12px}
+@media (max-width:1040px){.gnav-li{border-bottom:1px solid var(--line)}.gnav-link{display:flex;width:100%;min-height:56px;padding:0 4px;font-size:16px;color:var(--ink);border-radius:0;background:transparent !important}.gnav .gnav-btn{padding:0 4px}}
+@media (min-width:1041px){.gnav{gap:0}.gnav-link,.gnav .gnav-btn{padding:0 8px;font-size:13.5px}}
+@media (min-width:1041px){.nav-inner{gap:14px}}
+@media (min-width:1041px){.logo span{display:none}}
 </style>
 </head>
 <body>
@@ -1364,25 +1373,28 @@ button.btn{font-family:inherit}
       <ul class="gnav">
         <li class="gnav-item">
           <button type="button" class="gnav-btn" aria-expanded="false" aria-controls="g-match">試合・チケット<svg class="gchev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
-          <ul class="gnav-panel" id="g-match"><li><a href="#schedule" data-nav="schedule"><b>試合日程・結果</b><span>全38試合の日程と結果</span></a></li><li><a href="#ticket"><b>チケット</b><span>席の種類と料金</span></a></li><li><a href="#guide" data-nav="guide"><b>観戦ガイド</b><span>はじめての方へ・座席・アクセス</span></a></li></ul>
+          <ul class="gnav-panel" id="g-match"><li><a href="#schedule" data-nav="schedule"><b>試合日程・結果</b><span>全38試合の日程と結果</span></a></li><li><a href="#ticket"><b>チケット</b><span>席の種類と料金</span></a></li></ul>
+        </li>
+        <li class="gnav-li"><a class="gnav-link" href="#gd-access">アクセス</a></li>
+        <li class="gnav-item">
+          <button type="button" class="gnav-btn" aria-expanded="false" aria-controls="g-guide">GUIDE<svg class="gchev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="gnav-panel" id="g-guide"><li><a href="#guide" data-nav="guide"><b>観戦ガイド</b><span>はじめての方へ・1日の流れ</span></a></li><li><a href="#gd-seats"><b>座席ガイド</b><span>席の種類と見え方</span></a></li><li><a href="#gd-faq"><b>よくある質問</b><span>持ち物・ルール・駐車場</span></a></li></ul>
+        </li>
+        <li class="gnav-li"><a class="gnav-link" href="#news-list" data-nav="news-list">ニュース</a></li>
+        <li class="gnav-li"><a class="gnav-link" href="#mascot" data-nav="mascot">マスコット</a></li>
+        <li class="gnav-li"><a class="gnav-link" href="#goods" data-nav="goods">グッズ</a></li>
+        <li class="gnav-item">
+          <button type="button" class="gnav-btn" aria-expanded="false" aria-controls="g-home">ホームタウン<svg class="gchev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="gnav-panel" id="g-home"><li><a href="#hometown" data-nav="hometown"><b>ホームタウン活動</b><span>地域・大学との取り組み</span></a></li><li><a href="#citizen-day" data-nav="citizen-day"><b>つくば市民DAY</b><span>presented by CYBERDYNE</span></a></li><li><a href="#academy" data-nav="academy"><b>アカデミー</b><span>未来の選手を育てる</span></a></li></ul>
         </li>
         <li class="gnav-item">
           <button type="button" class="gnav-btn" aria-expanded="false" aria-controls="g-club">クラブ<svg class="gchev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
-          <ul class="gnav-panel" id="g-club"><li><a href="#about" data-nav="about"><b>クラブ概要</b><span>基本情報・エンブレム・歩み</span></a></li><li><a href="#philosophy" data-nav="philosophy"><b>フィロソフィー</b><span>Love &amp; Passion・MVV</span></a></li><li><a href="#news-list" data-nav="news-list"><b>ニュース</b><span>クラブからの最新情報</span></a></li><li><a href="#mascot" data-nav="mascot"><b>マスコット</b><span>ツクマル＆ツクマリーナ</span></a></li><li><a href="#hometown" data-nav="hometown"><b>ホームタウン活動</b><span>地域・大学との取り組み</span></a></li><li><a href="#citizen-day" data-nav="citizen-day"><b>つくば市民DAY</b><span>presented by CYBERDYNE</span></a></li><li><a href="#academy" data-nav="academy"><b>アカデミー</b><span>未来の選手を育てる</span></a></li><li><a href="#stadium" data-nav="stadium"><b>スタジアム構想</b><span>2035年、創設50周年へ</span></a></li></ul>
-        </li>
-        <li class="gnav-item">
-          <button type="button" class="gnav-btn" aria-expanded="false" aria-controls="g-fan">ファン<svg class="gchev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
-          <ul class="gnav-panel" id="g-fan"><li><a href="#fanclub" data-nav="fanclub"><b>ファンクラブ</b><span>会員ランクとポイント</span></a></li><li><a href="#goods" data-nav="goods"><b>グッズ</b><span>ユニフォーム・マフラー・アパレル</span></a></li></ul>
-        </li>
-        <li class="gnav-item">
-          <button type="button" class="gnav-btn" aria-expanded="false" aria-controls="g-partner">パートナー<svg class="gchev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
-          <ul class="gnav-panel" id="g-partner"><li><a href="#partnership" data-nav="partnership"><b>パートナーシップ</b><span>業種そのものを試合日に</span></a></li><li><a href="#pa-contact"><b>お問い合わせ</b><span>パートナーシップのご相談</span></a></li></ul>
+          <ul class="gnav-panel" id="g-club"><li><a href="#about" data-nav="about"><b>クラブ概要</b><span>基本情報・エンブレム・歩み</span></a></li><li><a href="#philosophy" data-nav="philosophy"><b>フィロソフィー</b><span>Love &amp; Passion・MVV</span></a></li><li><a href="#stadium" data-nav="stadium"><b>スタジアム構想</b><span>2035年、創設50周年へ</span></a></li><li><a href="#fanclub" data-nav="fanclub"><b>ファンクラブ</b><span>会員ランクとポイント</span></a></li><li><a href="#partnership" data-nav="partnership"><b>パートナーシップ</b><span>業種そのものを試合日に</span></a></li></ul>
         </li>
       </ul>
-      <div class="nav-cta"><a href="#ticket" class="btn btn-gold">チケットを購入</a><a href="#goods" class="btn btn-outline">グッズを見る</a></div>
+      <div class="nav-cta"><a href="#ticket" class="btn btn-gold">チケットを購入</a></div>
     </nav>
     <div class="nav-actions">
-      <a href="#goods" class="goods-pill" data-nav="goods"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>グッズ</a>
       <a href="#ticket" class="btn btn-gold">チケットを購入</a>
       <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
