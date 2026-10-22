@@ -1241,123 +1241,37 @@ button.btn{font-family:inherit}
 <div class="soon-toast" id="soon-toast" role="status" aria-live="polite"></div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tsukuba-emblem" viewBox="0 0 1000 1000">
-<defs>
-    <path id="topArc" d="M 150,500 A 350,350 0 0 1 850,500" fill="none"/>
-    <path id="bottomArc" d="M 260,760 A 320,320 0 0 0 740,760" fill="none"/>
-
-    <linearGradient id="mtnFar" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#bcd9ee"/>
-      <stop offset="100%" stop-color="#9cc3e0"/>
-    </linearGradient>
-    <linearGradient id="mtnNear" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#274b7a"/>
-      <stop offset="100%" stop-color="#173a63"/>
-    </linearGradient>
-    <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2f6fad"/>
-      <stop offset="100%" stop-color="#1c4c82"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Outer rings -->
-  <circle cx="500" cy="500" r="480" fill="#12213f"/>
-  <circle cx="500" cy="500" r="480" fill="none" stroke="#e8b93c" stroke-width="8"/>
-  <circle cx="500" cy="500" r="452" fill="#12213f"/>
-  <circle cx="500" cy="500" r="452" fill="none" stroke="#e8b93c" stroke-width="6"/>
-
-  <!-- ring text band -->
-  <circle cx="500" cy="500" r="398" fill="#173a63"/>
-  <circle cx="500" cy="500" r="398" fill="none" stroke="#e8b93c" stroke-width="5"/>
-  <circle cx="500" cy="500" r="330" fill="none" stroke="#e8b93c" stroke-width="5"/>
-
-  <!-- decorative small arcs left/right -->
-  <path d="M 150,500 A 350,350 0 0 0 175,610" fill="none" stroke="#e8b93c" stroke-width="4"/>
-  <path d="M 850,500 A 350,350 0 0 1 825,610" fill="none" stroke="#e8b93c" stroke-width="4"/>
-  <path d="M 168,650 A 350,350 0 0 0 210,720" fill="none" stroke="#e8b93c" stroke-width="4"/>
-  <path d="M 832,650 A 350,350 0 0 1 790,720" fill="none" stroke="#e8b93c" stroke-width="4"/>
-
-  <!-- Top curved text -->
-  <text font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="58" fill="#f4f4f4" letter-spacing="4">
-    <textPath href="#topArc" startOffset="50%" text-anchor="middle">TSUKUBA FRONTIER FC</textPath>
-  </text>
-
-  <!-- Bottom curved text -->
-  <text font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="46" fill="#f4f4f4" letter-spacing="5">
-    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">EST. 1985</textPath>
-  </text>
-
-  <!-- Inner emblem disc -->
-  <circle cx="500" cy="500" r="330" fill="#173a63"/>
-  <clipPath id="innerClip">
-    <circle cx="500" cy="500" r="325"/>
-  </clipPath>
-
-  <g clip-path="url(#innerClip)">
-    <!-- sky background -->
-    <rect x="175" y="175" width="650" height="650" fill="#1d4d82"/>
-
-    <!-- far mountain range -->
-    <path d="M 175,430 L 300,300 L 380,380 L 470,260 L 560,380 L 650,290 L 730,400 L 825,340 L 825,470 L 175,470 Z" fill="#8fb9de"/>
-    <!-- near mountain / peak with snow cap -->
-    <path d="M 350,440 L 500,235 L 655,440 Z" fill="#2c5586"/>
-    <path d="M 460,300 L 500,235 L 545,300 L 520,320 L 500,290 L 480,320 Z" fill="#eef3f8"/>
-    <!-- summit flag / spire -->
-    <path d="M 495,235 L 500,150 L 505,235 Z" fill="#e8b93c"/>
-
-    <!-- shield -->
-    <path d="M 330,470 L 500,470 L 670,470 L 670,610
-             C 670,700 590,760 500,795
-             C 410,760 330,700 330,610 Z" fill="#2f6fad"/>
-    <path d="M 330,470 L 500,470 L 670,470 L 670,610
-             C 670,700 590,760 500,795
-             C 410,760 330,700 330,610 Z" fill="none" stroke="#0f2c4d" stroke-width="8"/>
-
-    <!-- waves at base of shield -->
-    <path d="M 330,650 C 375,620 415,675 460,648 C 505,620 545,678 590,650 C 620,632 650,638 670,650
-             L 670,610 C 655,650 590,760 500,795 C 410,760 345,700 330,650 Z" fill="#e8b93c"/>
-    <path d="M 340,690 C 385,665 425,712 470,690 C 515,668 555,712 600,690
-             C 550,745 525,762 500,772 C 460,760 385,730 340,690 Z" fill="#2f6fad"/>
-    <path d="M 360,720 C 400,700 440,735 480,718 C 505,708 520,712 535,720
-             C 510,745 500,752 500,752 C 460,742 400,738 360,720 Z" fill="#7fb4de"/>
-
-    <!-- compass star -->
-    <g transform="translate(500,555)">
-      <polygon points="0,-185 22,-30 0,0" fill="#e8b93c"/>
-      <polygon points="0,-185 -22,-30 0,0" fill="#fbe9b8"/>
-      <polygon points="0,185 22,30 0,0" fill="#e8b93c"/>
-      <polygon points="0,185 -22,30 0,0" fill="#fbe9b8"/>
-      <polygon points="-185,0 -30,-22 0,0" fill="#e8b93c"/>
-      <polygon points="-185,0 -30,22 0,0" fill="#fbe9b8"/>
-      <polygon points="185,0 30,-22 0,0" fill="#e8b93c"/>
-      <polygon points="185,0 30,22 0,0" fill="#fbe9b8"/>
-      <polygon points="0,-100 12,-14 0,0" fill="#fbe9b8"/>
-      <polygon points="0,-100 -12,-14 0,0" fill="#e8b93c"/>
-      <polygon points="0,100 12,14 0,0" fill="#fbe9b8"/>
-      <polygon points="0,100 -12,14 0,0" fill="#e8b93c"/>
-      <polygon points="-100,0 -14,-12 0,0" fill="#fbe9b8"/>
-      <polygon points="-100,0 -14,12 0,0" fill="#e8b93c"/>
-      <polygon points="100,0 14,-12 0,0" fill="#fbe9b8"/>
-      <polygon points="100,0 14,12 0,0" fill="#e8b93c"/>
-      <circle cx="0" cy="0" r="10" fill="#173a63"/>
-    </g>
-
-    <!-- soccer ball resting under star point -->
-    <g transform="translate(500,745)">
-      <circle r="42" fill="#f4f4f4" stroke="#173a63" stroke-width="6"/>
-      <polygon points="0,-18 17,-6 10,15 -10,15 -17,-6" fill="#173a63"/>
-      <path d="M 0,-18 L 0,-40 M 17,-6 L 38,-14 M 10,15 L 22,34 M -10,15 L -22,34 M -17,-6 L -38,-14"
-            stroke="#173a63" stroke-width="4" fill="none" stroke-linecap="round"/>
-    </g>
-  </g>
-
-  <!-- inner disc border -->
-  <circle cx="500" cy="500" r="330" fill="none" stroke="#e8b93c" stroke-width="7"/>
+<path fill="#5FB0D3" d="M190,345 L335,215 L405,278 L500,95 L598,272 L668,205 L810,345 Z"/>
+<path fill="#FFFFFF" d="M150,385 L850,385 L822,450 L178,450 Z"/>
+<path fill="#FFFFFF" d="M352,450 L462,450 L462,905 L352,835 Z"/>
+<path fill="#FFFFFF" d="M482,450 L572,450 L572,850 L482,905 Z"/>
+<path fill="#FFFFFF" d="M572,565 L790,565 L762,632 L572,632 Z"/>
+</symbol><symbol id="tsukuba-emblem-tile" viewBox="0 0 1000 1000">
+<rect width="1000" height="1000" rx="200" fill="#12213F"/>
+<g transform="translate(110,110) scale(.78)">
+<path fill="#5FB0D3" d="M190,345 L335,215 L405,278 L500,95 L598,272 L668,205 L810,345 Z"/>
+<path fill="#FFFFFF" d="M150,385 L850,385 L822,450 L178,450 Z"/>
+<path fill="#FFFFFF" d="M352,450 L462,450 L462,905 L352,835 Z"/>
+<path fill="#FFFFFF" d="M482,450 L572,450 L572,850 L482,905 Z"/>
+<path fill="#FFFFFF" d="M572,565 L790,565 L762,632 L572,632 Z"/>
+</g>
+</symbol><symbol id="tsukuba-emblem-lockup" viewBox="0 0 1000 1000">
+<rect width="1000" height="1000" rx="90" fill="#12213F"/>
+<g transform="translate(220,90) scale(.56)">
+<path fill="#5FB0D3" d="M190,345 L335,215 L405,278 L500,95 L598,272 L668,205 L810,345 Z"/>
+<path fill="#FFFFFF" d="M150,385 L850,385 L822,450 L178,450 Z"/>
+<path fill="#FFFFFF" d="M352,450 L462,450 L462,905 L352,835 Z"/>
+<path fill="#FFFFFF" d="M482,450 L572,450 L572,850 L482,905 Z"/>
+<path fill="#FFFFFF" d="M572,565 L790,565 L762,632 L572,632 Z"/>
+</g>
+<text x="500" y="755" text-anchor="middle" font-family="'Barlow Condensed','Zen Kaku Gothic New',Arial,sans-serif" font-weight="700" font-size="78" letter-spacing="4" textLength="780" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF">TSUKUBA FRONTIER FC</text>
+<text x="500" y="850" text-anchor="middle" font-family="'Barlow Condensed','Zen Kaku Gothic New',Arial,sans-serif" font-weight="600" font-size="56" letter-spacing="6" textLength="300" lengthAdjust="spacingAndGlyphs" fill="#5FB0D3">EST. 1985</text>
 </symbol></svg>
 
 <header class="site-header">
   <div class="wrap nav-inner">
     <a href="#top" class="logo" aria-label="つくばフロンティアFC ホーム">
-      <svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#tsukuba-emblem"></use></svg>
+      <svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#tsukuba-emblem-tile"></use></svg>
       <span>つくばフロンティアFC</span>
     </a>
     <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
@@ -2487,7 +2401,7 @@ button.btn{font-family:inherit}
 
   <section class="pa-sec">
     <div class="wrap ab-grid">
-      <div class="ab-emblem"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#tsukuba-emblem"></use></svg></div>
+      <div class="ab-emblem"><svg viewBox="0 0 1000 1000" role="img" aria-label="つくばフロンティアFC エンブレム TSUKUBA FRONTIER FC EST. 1985"><use href="#tsukuba-emblem-lockup"></use></svg></div>
       <div>
         <h2 class="section-title">基本情報</h2>
         <dl class="spec ab-spec">
@@ -3088,7 +3002,7 @@ button.btn{font-family:inherit}
 <footer class="site-footer">
   <div class="wrap foot-inner">
     <div class="foot-brand">
-      <svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#tsukuba-emblem"></use></svg>
+      <svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#tsukuba-emblem-tile"></use></svg>
       <span>つくばフロンティア・スポーツエンターテインメント ©2027<br>本サイトは検討用のモックアップです</span>
     </div>
     <nav class="foot-links" aria-label="フッターメニュー"><div class="fcol"><b>試合・チケット</b><ul><li><a href="#schedule">試合日程・結果</a></li><li><a href="#ticket">チケット</a></li><li><a href="#guide">観戦ガイド</a></li></ul></div><div class="fcol"><b>クラブ</b><ul><li><a href="#about">クラブ概要</a></li><li><a href="#philosophy">フィロソフィー</a></li><li><a href="#news-list">ニュース</a></li><li><a href="#mascot">マスコット</a></li><li><a href="#hometown">ホームタウン活動</a></li><li><a href="#academy">アカデミー</a></li><li><a href="#stadium">スタジアム構想</a></li></ul></div><div class="fcol"><b>ファン</b><ul><li><a href="#fanclub">ファンクラブ</a></li><li><a href="#goods">グッズ</a></li></ul></div><div class="fcol"><b>パートナー</b><ul><li><a href="#partnership">パートナーシップ</a></li><li><a href="#pa-contact">お問い合わせ</a></li></ul></div></nav>
