@@ -522,6 +522,8 @@ body.view-news-coach #home-view{display:none}
 body.view-news-coach #news-coach{display:block}
 body.view-news-hajimete #home-view{display:none}
 body.view-news-hajimete #news-hajimete{display:block}
+body.view-news-expo #home-view{display:none}
+body.view-news-expo #news-expo{display:block}
 .nh-grid{margin-top:36px;display:grid;grid-template-columns:1fr;gap:36px;align-items:start}
 .nh-poster{margin:0 auto;max-width:620px;width:100%}
 .nh-poster img{width:100%;height:auto;border-radius:16px;display:block;box-shadow:0 18px 40px rgba(18,33,63,.18)}
@@ -1300,6 +1302,19 @@ button.btn{font-family:inherit}
 @media (min-width:1041px){.gnav{gap:0}.gnav-link,.gnav .gnav-btn{padding:0 8px;font-size:13.5px}}
 @media (min-width:1041px){.nav-inner{gap:14px}}
 @media (min-width:1041px){.logo span{display:none}}
+.ex-sub{display:block;font-size:.6em;margin-top:6px;color:var(--ink-soft)}
+.ex-poster{margin:32px 0 0}
+.ex-poster img{width:100%;height:auto;border-radius:16px;display:block;box-shadow:0 16px 36px rgba(18,33,63,.16)}
+.ex-poster figcaption{font-size:12px;color:var(--ink-soft);margin-top:8px}
+.ex-diary{margin-top:40px;background:#FFFDF6;border:1px solid #EADFC4;border-radius:14px;padding:28px 32px;background-image:repeating-linear-gradient(transparent 0,transparent 35px,#E9E1CF 35px,#E9E1CF 36px);background-position:0 18px}
+.ex-diary-h{font-family:var(--f-display);font-weight:800;font-size:20px;color:var(--navy);margin-bottom:12px}
+.ex-diary-h span{font-size:13px;color:var(--ink-soft);font-family:var(--f-body)}
+.ex-entry{margin-top:14px}
+.ex-entry p{line-height:36px;font-size:16px;color:#2A2A2A}
+.ex-date{font-weight:900;color:#B5522B}
+.ex-after{margin-top:40px}
+.ex-after p{margin-top:12px;line-height:2}
+@media (max-width:640px){.ex-diary{padding:20px 18px}}
 </style>
 </head>
 <body>
@@ -1838,6 +1853,28 @@ button.btn{font-family:inherit}
         </dl>
       </div>
       <p class="nh-back"><a href="#ticket" class="btn btn-gold">チケットを購入</a> <a href="#pa-event" class="text-link">パートナー共創企画を見る</a> <a href="#news-list" class="text-link">ニュース一覧へ戻る</a></p>
+    </div>
+  </article>
+</main>
+
+<main id="news-expo" class="article-view" aria-labelledby="ne-title">
+  <article class="article">
+    <div class="wrap article-wrap">
+      <div class="crumb crumb-dark"><a href="#top">ホーム</a><span aria-hidden="true">/</span><a href="#news-list">ニュース</a><span aria-hidden="true">/</span><span>つくば万博’85の想い出</span></div>
+      <div class="article-meta"><time class="news-date" datetime="2027-09-24">2027.09.24</time><span class="tag">クラブ</span></div>
+      <h1 id="ne-title" class="article-title">つくば万博’85の想い出<br><small class="ex-sub">～ある少年の日記から～</small></h1>
+      <p class="article-lead">1985年。つくばフロンティアFCが生まれたこの年、つくばでは「国際科学技術博覧会（つくば万博）」が開かれ、3月17日から9月16日までの184日間に約2,033万人が訪れました。当時10歳だった、ある少年の夏休みの日記をご紹介します。</p>
+      <figure class="ex-poster"><a href="expo85.jpg" target="_blank" rel="noopener"><img src="expo85.jpg" alt="TSUKUBA EXPO’85のイメージポスター。筑波山を背景に広がる会場、ジャンボトロン、エキスポライナーやシャトルバス" width="1400" height="789"></a><figcaption>つくば万博’85 イメージ（画像をクリックすると原寸で表示されます）</figcaption></figure>
+      <section class="ex-diary" aria-label="少年の日記">
+        <p class="ex-diary-h">ぼくの日記　<span>（10才・小学4年生）</span></p>
+        <div class="ex-entry"><p class="ex-date">1985年8月10日（土）はれ</p><p>今日、お父さんとつくばの万博に行った。上野から「エキスポライナー」という電車にのって、「万博中央駅」でおりた。駅からはバスで会場へ。人がいっぱいで、どこを見ても人、人、人。人気のパビリオンは2時間もならんだ。足がぼうになった。</p></div><div class="ex-entry"><p class="ex-date">8月10日 つづき</p><p>「ジャンボトロン」がすごかった。テレビの何百倍もある大きな画面に、会場の人たちがうつっていた。手をふったら、ぼくもうつったかもしれない。ロボットもいっぱいいて、未来の世界に来たみたいだった。</p></div><div class="ex-entry"><p class="ex-date">8月11日（日）くもり</p><p>「ポストカプセル」で、21世紀の自分に手紙を書いた。2001年のお正月にとどくらしい。そのころぼくは26才。何をしているのかな。サッカー選手になっているかな。手紙には「夢をわすれるな」と書いた。</p></div><div class="ex-entry"><p class="ex-date">8月11日 夜</p><p>帰りの電車のまどから、筑波山が見えた。つくばは科学のまちなんだって、お父さんが言っていた。ぼくも大きくなったら、つくばみたいなところで、何かすごいことをしてみたい。未来って、楽しそうだ。</p></div>
+      </section>
+      <section class="ex-after">
+        <h2 class="comment-h">あれから40年あまり</h2>
+        <p>「夢をわすれるな」と自分あてに書いた少年は、いまもこの街のスタジアムで、クラブを応援しています。万博の年に生まれたつくばフロンティアFCも、2035年に創設50周年を迎えます。</p>
+        <p>科学と技術がつくる未来に、たくさんの人が集まったあの夏のように。週末のつくばに、もう一度、みんなが集まる場所を。クラブはこれからも、つくばの未来へ挑戦を続けます。</p>
+      </section>
+      <p class="nh-back"><a href="#stadium" class="btn btn-gold">スタジアム構想を見る</a> <a href="#news-list" class="text-link">ニュース一覧へ戻る</a></p>
     </div>
   </article>
 </main>
@@ -2736,8 +2773,8 @@ button.btn{font-family:inherit}
     </div>
   </div>
   <div class="wrap nl-body">
-    <div class="nl-filter" role="group" aria-label="カテゴリで絞り込む"><button type="button" class="fbtn nf" data-f="all" aria-pressed="true">すべて<span>21</span></button><button type="button" class="fbtn nf" data-f="match" aria-pressed="false">試合<span>2</span></button><button type="button" class="fbtn nf" data-f="ticket" aria-pressed="false">チケット<span>2</span></button><button type="button" class="fbtn nf" data-f="club" aria-pressed="false">クラブ<span>3</span></button><button type="button" class="fbtn nf" data-f="event" aria-pressed="false">イベント<span>4</span></button><button type="button" class="fbtn nf" data-f="hometown" aria-pressed="false">ホームタウン<span>3</span></button><button type="button" class="fbtn nf" data-f="academy" aria-pressed="false">アカデミー<span>1</span></button><button type="button" class="fbtn nf" data-f="goods" aria-pressed="false">グッズ<span>2</span></button><button type="button" class="fbtn nf" data-f="fanclub" aria-pressed="false">ファンクラブ<span>1</span></button><button type="button" class="fbtn nf" data-f="partner" aria-pressed="false">パートナー<span>3</span></button></div>
-    <p class="nl-count" aria-live="polite">21件のニュース</p>
+    <div class="nl-filter" role="group" aria-label="カテゴリで絞り込む"><button type="button" class="fbtn nf" data-f="all" aria-pressed="true">すべて<span>22</span></button><button type="button" class="fbtn nf" data-f="match" aria-pressed="false">試合<span>2</span></button><button type="button" class="fbtn nf" data-f="ticket" aria-pressed="false">チケット<span>2</span></button><button type="button" class="fbtn nf" data-f="club" aria-pressed="false">クラブ<span>4</span></button><button type="button" class="fbtn nf" data-f="event" aria-pressed="false">イベント<span>4</span></button><button type="button" class="fbtn nf" data-f="hometown" aria-pressed="false">ホームタウン<span>3</span></button><button type="button" class="fbtn nf" data-f="academy" aria-pressed="false">アカデミー<span>1</span></button><button type="button" class="fbtn nf" data-f="goods" aria-pressed="false">グッズ<span>2</span></button><button type="button" class="fbtn nf" data-f="fanclub" aria-pressed="false">ファンクラブ<span>1</span></button><button type="button" class="fbtn nf" data-f="partner" aria-pressed="false">パートナー<span>3</span></button></div>
+    <p class="nl-count" aria-live="polite">22件のニュース</p>
     <ul class="news-list nl-list">
         <li data-cat="event"><a href="#news-hajimete" class="has-thumb"><time class="news-date" datetime="2027-10-23">2027.10.23</time><span class="tag">イベント</span><span class="news-title">10/31 奈良クラブ戦「ばんどう太郎 presents はじめて観戦DAY ～ドローンで届く！感謝のシール～」開催のお知らせ<img class="news-thumb" src="hajimete_day_thumb.jpg" alt="はじめて観戦DAYのポスター。ドローンがツクマルのシールを運んでいる" width="120" height="120"></span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></a></li>
         <li data-cat="event"><a href="#citizen-day"><time class="news-date" datetime="2027-10-22">2027.10.22</time><span class="tag">イベント</span><span class="news-title">11/14 つくば市民DAY「CYBERDYNE presents 5,000人フルマラソンリレー」開催決定</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></a></li>
@@ -2760,6 +2797,7 @@ button.btn{font-family:inherit}
         <li data-cat="partner"><a href="#pa-current"><time class="news-date" datetime="2027-09-29">2027.09.29</time><span class="tag">パートナー</span><span class="news-title">CYBERDYNE「HAL体験ブース」が試合日に初出展（第4節 ザスパ群馬戦）</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></a></li>
         <li data-cat="goods"><a href="#goods-uniform"><time class="news-date" datetime="2027-09-28">2027.09.28</time><span class="tag">グッズ</span><span class="news-title">2027-28シーズン ホーム／アウェイユニフォーム発表</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></a></li>
         <li data-cat="club"><a href="#news-coach"><time class="news-date" datetime="2027-09-25">2027.09.25</time><span class="tag">クラブ</span><span class="news-title">栗生佳典 監督就任のお知らせ</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></a></li>
+        <li data-cat="club"><a href="#news-expo" class="has-thumb"><time class="news-date" datetime="2027-09-24">2027.09.24</time><span class="tag">クラブ</span><span class="news-title">【コラム】つくば万博’85の想い出 ～ある少年の日記から～<img class="news-thumb" src="expo85_thumb.jpg" alt="TSUKUBA EXPO’85のポスター" width="120" height="120"></span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></a></li>
     </ul>
   </div>
 </main>
@@ -3307,10 +3345,10 @@ button.btn{font-family:inherit}
     else { stVideo.muted=true; stSound.querySelector('span').textContent='音声つきで最初から再生'; }
   });
   stPause.addEventListener('click',function(){ stLoad(); if(stVideo.paused){ stVideo.play(); stSetPaused(false);} else { stVideo.pause(); stSetPaused(true);} });
-  var views={'#philosophy':['philosophy','フィロソフィー'],'#news-coach':['news-coach','栗生佳典 監督就任のお知らせ'],'#news-hajimete':['news-hajimete','はじめて観戦DAY'],'#pa-event':['partnership','パートナーシップ'],'#pa-marathon':['partnership','パートナーシップ'],'#pa-list':['partnership','パートナーシップ'],'#fanclub':['fanclub','ファンクラブ'],'#fc-ranks':['fanclub','ファンクラブ'],'#fc-compare':['fanclub','ファンクラブ'],'#fc-points':['fanclub','ファンクラブ'],'#fc-exchange':['fanclub','ファンクラブ'],'#fc-join':['fanclub','ファンクラブ'],'#guide':['guide','観戦ガイド'],'#gd-first':['guide','観戦ガイド'],'#gd-seats':['guide','観戦ガイド'],'#gd-access':['guide','観戦ガイド'],'#gd-day':['guide','観戦ガイド'],'#gd-enjoy':['guide','観戦ガイド'],'#gd-rules':['guide','観戦ガイド'],'#gd-faq':['guide','観戦ガイド'],'#news-list':['news-list','ニュース'],'#ph-philosophy':['philosophy','フィロソフィー'],'#ph-mission':['philosophy','フィロソフィー'],'#ph-vision':['philosophy','フィロソフィー'],'#ph-values':['philosophy','フィロソフィー'],'#citizen-day':['citizen-day','つくば市民DAY'],'#about':['about','クラブ概要'],'#academy':['academy','アカデミー'],'#mascot':['mascot','マスコット'],'#hometown':['hometown','ホームタウン活動'],'#ht-eco':['hometown','ホームタウン活動'],'#ht-univ':['hometown','ホームタウン活動'],'#schedule':['schedule','試合日程・結果'],'#partnership':['partnership','パートナーシップ'],'#pa-issue':['partnership','パートナーシップ'],'#pa-current':['partnership','パートナーシップ'],'#pa-b2b':['partnership','パートナーシップ'],'#pa-contact':['partnership','パートナーシップ'],'#stadium':['stadium','新スタジアム構想'],'#goods':['goods','グッズ'],'#goods-uniform':['goods','グッズ'],'#goods-muffler':['goods','グッズ'],'#goods-hoodie':['goods','グッズ'],'#goods-apparel':['goods','グッズ'],'#goods-tsukumaru':['goods','グッズ']};
+  var views={'#philosophy':['philosophy','フィロソフィー'],'#news-coach':['news-coach','栗生佳典 監督就任のお知らせ'],'#news-hajimete':['news-hajimete','はじめて観戦DAY'],'#news-expo':['news-expo','つくば万博’85の想い出'],'#pa-event':['partnership','パートナーシップ'],'#pa-marathon':['partnership','パートナーシップ'],'#pa-list':['partnership','パートナーシップ'],'#fanclub':['fanclub','ファンクラブ'],'#fc-ranks':['fanclub','ファンクラブ'],'#fc-compare':['fanclub','ファンクラブ'],'#fc-points':['fanclub','ファンクラブ'],'#fc-exchange':['fanclub','ファンクラブ'],'#fc-join':['fanclub','ファンクラブ'],'#guide':['guide','観戦ガイド'],'#gd-first':['guide','観戦ガイド'],'#gd-seats':['guide','観戦ガイド'],'#gd-access':['guide','観戦ガイド'],'#gd-day':['guide','観戦ガイド'],'#gd-enjoy':['guide','観戦ガイド'],'#gd-rules':['guide','観戦ガイド'],'#gd-faq':['guide','観戦ガイド'],'#news-list':['news-list','ニュース'],'#ph-philosophy':['philosophy','フィロソフィー'],'#ph-mission':['philosophy','フィロソフィー'],'#ph-vision':['philosophy','フィロソフィー'],'#ph-values':['philosophy','フィロソフィー'],'#citizen-day':['citizen-day','つくば市民DAY'],'#about':['about','クラブ概要'],'#academy':['academy','アカデミー'],'#mascot':['mascot','マスコット'],'#hometown':['hometown','ホームタウン活動'],'#ht-eco':['hometown','ホームタウン活動'],'#ht-univ':['hometown','ホームタウン活動'],'#schedule':['schedule','試合日程・結果'],'#partnership':['partnership','パートナーシップ'],'#pa-issue':['partnership','パートナーシップ'],'#pa-current':['partnership','パートナーシップ'],'#pa-b2b':['partnership','パートナーシップ'],'#pa-contact':['partnership','パートナーシップ'],'#stadium':['stadium','新スタジアム構想'],'#goods':['goods','グッズ'],'#goods-uniform':['goods','グッズ'],'#goods-muffler':['goods','グッズ'],'#goods-hoodie':['goods','グッズ'],'#goods-apparel':['goods','グッズ'],'#goods-tsukumaru':['goods','グッズ']};
   function route(){
     var h=location.hash, v=views[h], prev=body.dataset.view||'';
-    ['philosophy','goods','stadium','partnership','news-coach','news-hajimete','schedule','hometown','fanclub','mascot','guide','about','academy','news-list','citizen-day'].forEach(function(n){ body.classList.toggle('view-'+n, !!v && v[0]===n); });
+    ['philosophy','goods','stadium','partnership','news-coach','news-hajimete','news-expo','schedule','hometown','fanclub','mascot','guide','about','academy','news-list','citizen-day'].forEach(function(n){ body.classList.toggle('view-'+n, !!v && v[0]===n); });
     body.dataset.view=v?v[0]:'';
     if(v&&v[0]==='stadium') stEnter(); else stLeave();
     document.querySelectorAll('[data-nav]').forEach(function(a){
